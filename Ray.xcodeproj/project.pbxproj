@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		A3197D38250F28FF008A523E /* Ray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ray; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3197D3B250F28FF008A523E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A3197D42250F291A008A523E /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		A3197D44250F2C36008A523E /* eigen-3.3.7 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "eigen-3.3.7"; path = "../../Downloads/eigen-3.3.7"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			children = (
 				A3197D3A250F28FF008A523E /* Ray */,
 				A3197D39250F28FF008A523E /* Products */,
+				A3197D43250F2C36008A523E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +61,17 @@
 			isa = PBXGroup;
 			children = (
 				A3197D3B250F28FF008A523E /* main.cpp */,
+				A3197D42250F291A008A523E /* Header.h */,
 			);
 			path = Ray;
+			sourceTree = "<group>";
+		};
+		A3197D43250F2C36008A523E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3197D44250F2C36008A523E /* eigen-3.3.7 */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/eigen/3.3.7/include/eigen3/Eigen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/eigen/3.3.7/include/eigen3/Eigen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
